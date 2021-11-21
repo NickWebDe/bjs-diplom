@@ -11,6 +11,7 @@ user.loginFormCallback = data => {
 	});
 };
 
+
 user.registerFormCallback = data => {
 	ApiConnector.register(data, response => {
 		if(response.success) {
@@ -23,12 +24,5 @@ user.registerFormCallback = data => {
 	);
 }
 
-ApiConnector.current(data => {
-	if(true) {
-		ProfileWidget.showProfile(data);
-		console.log('debugging')
-	}
-	console.log('nothing'); 
-});
 
 
