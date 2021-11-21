@@ -32,7 +32,7 @@ moneyOperation.addMoneyCallback = (data) => ApiConnector.addMoney(data, response
 	if(response.success) {
 		ProfileWidget.showProfile(response.data);
 		moneyOperation.setMessage(response.success, 'Баланс успешно пополнен');
-	}
+	}   moneyOperation.setMessage(response.success, response.error);
 });
 
 moneyOperation.conversionMoneyCallback = (data) => ApiConnector.convertMoney(data, response => {
