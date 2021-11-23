@@ -4,9 +4,10 @@ let user = new UserForm(); //Содаем обьект для нового ло�
 
 user.loginFormCallback = data => {
 	ApiConnector.login(data, response => {
-	console.log(response)
 	if(response.success) {
-		location.reload();
+		user.setLoginErrorMessage('Успешная авторизация');
+	    setTimeout(() => location.reload(), 1500);
+	    return;
 	} user.setLoginErrorMessage(response.error) //Выводим в консоль ошибку, информацию об ошибке берем из свойства колбэка
 	});
 };
@@ -20,8 +21,7 @@ user.registerFormCallback = data => {
 			return;
 		}
 		user.setRegisterErrorMessage(response.error); //Выводим в консоль ошибку, информацию об ошибке берем из свойства колбэка
-	}
-	);
+	});
 }
 
 

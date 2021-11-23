@@ -288,6 +288,30 @@
         "EUR": 2087.283974241734,
         "NTC": 1644
       }
+    },
+    {
+      "created_at": "2021-11-23T20:12:09.731Z",
+      "login": "123",
+      "password": "123",
+      "id": 25,
+      "balance": {
+        "RUB": 0,
+        "USD": 0,
+        "EUR": 0,
+        "NTC": 0
+      }
+    },
+    {
+      "created_at": "2021-11-23T20:22:48.907Z",
+      "login": "1234",
+      "password": "123",
+      "id": 26,
+      "balance": {
+        "RUB": 0,
+        "USD": 0,
+        "EUR": 0,
+        "NTC": 0
+      }
     }
   ],
   "favorites": {
