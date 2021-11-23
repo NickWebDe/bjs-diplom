@@ -5,8 +5,7 @@ let user = new UserForm(); //Содаем обьект для нового ло�
 user.loginFormCallback = data => {
 	ApiConnector.login(data, response => {
 	if(response.success) {
-		user.setLoginErrorMessage('Успешная авторизация');
-	    setTimeout(() => location.reload(), 1500);
+	    location.reload();
 	    return;
 	} user.setLoginErrorMessage(response.error) //Выводим в консоль ошибку, информацию об ошибке берем из свойства колбэка
 	});
