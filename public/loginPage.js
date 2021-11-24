@@ -15,8 +15,7 @@ user.loginFormCallback = data => {
 user.registerFormCallback = data => {
 	ApiConnector.register(data, response => {
 		if(response.success) {
-			user.setRegisterErrorMessage('Вы успешно зарегистрировались!');
-			setTimeout(() => location.reload(), 1500);
+			location.reload();
 			return;
 		}
 		user.setRegisterErrorMessage(response.error); //Выводим в консоль ошибку, информацию об ошибке берем из свойства колбэка

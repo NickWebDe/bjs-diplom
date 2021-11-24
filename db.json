@@ -312,6 +312,30 @@
         "EUR": 0,
         "NTC": 0
       }
+    },
+    {
+      "created_at": "2021-11-24T20:40:22.011Z",
+      "login": "12345r",
+      "password": "213",
+      "id": 27,
+      "balance": {
+        "RUB": 0,
+        "USD": 0,
+        "EUR": 0,
+        "NTC": 0
+      }
+    },
+    {
+      "created_at": "2021-11-24T20:44:45.689Z",
+      "login": "123465",
+      "password": "123",
+      "id": 28,
+      "balance": {
+        "RUB": 0,
+        "USD": 0,
+        "EUR": 0,
+        "NTC": 0
+      }
     }
   ],
   "favorites": {
